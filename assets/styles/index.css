@@ -1,8 +1,28 @@
+.main-content__h1 {
+  font-family: "Lato", sans-serif;
+}
+.main-content__text {
+  font-family: "Roboto Slab", serif;
+}
+
+.btn-text {
+  font-family: "Lato", sans-serif;
+}
+
+.main-content__h1, .btn-text {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header {
   max-width: 1440px;
   padding-left: 75px;
   padding-right: 75px;
-  padding-top: 50px;
+  padding-top: 45px;
   display: flex;
   justify-content: space-between;
 }
@@ -16,25 +36,46 @@
   border: 0;
   border-radius: 2em;
   padding-left: 0.9em;
-  width: 7em;
-  font-size: larger;
+  width: 8em;
 }
 
 .main {
   max-width: 1440px;
   padding-left: 90px;
   padding-right: 90px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 17em 15em 48em;
+  grid-template-columns: 20em 20em 79vh;
   grid-template-rows: repeat(3, 1fr);
 }
 
 .main-content {
   grid-area: 1/1/3/2;
 }
+.main-content__h1 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.buy-btn {
+  grid-area: 3/1/4/2;
+  display: inline-flex;
+  align-items: center;
+  justify-items: center;
+  gap: 0.5em;
+  background-color: #5222D0;
+  color: white;
+  border: 0;
+  border-radius: 2em;
+  padding-left: 0.9em;
+  width: 16em;
+  height: 5.25em;
+  display: flex;
+  justify-content: space-around;
+}
 
 .main-content__img {
-  position: relative;
+  grid-area: 1/3/4/4;
 }
 .main-content__img-pict {
   height: 79vh;
@@ -43,10 +84,17 @@
 }
 
 .footer__menu {
+  max-width: 1440px;
+  padding-left: 90px;
+  padding-right: 90px;
+  margin: 0 auto;
   display: inline-flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 2em;
+  list-style-type: none;
+  font-size: 20px;
+  color: #5222D0;
 }
 
 /*# sourceMappingURL=index.css.map */
